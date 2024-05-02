@@ -17,10 +17,10 @@ jobs:
         uses: medyagh/setup-minikube@latest
 
       - name: Deploy PostgreSQL
-        run: kubectl apply -f /../../db-deployment.yaml
+        run: kubectl apply -f ../../db-deployment.yaml
 
       - name: Deploy devops-demo:v2
-        run: kubectl apply -f /../../backend-deployment.yaml
+        run: kubectl apply -f ../../backend-deployment.yaml
 
       - name: Deploy react-image:v2
-        run: kubectl apply -f /../../frontend-deployment.yaml
+        run: kubectl apply -f ../../frontend-deployment.yaml
